@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan if/else</title>
+</head>
+<body>
+    <script>
+        // jawaban hanya ya/tidak
+        var pilih = prompt('apakah anda ingin membeli baju ?pilih:ya/tidak');
+        
+        if(pilih === 'ya'){
+            var hargaBaju = parseInt(prompt("berapa harga baju ini?"))
+            var jumlahUang = parseInt(prompt ('Masukkan jumlah uang anda'));
+            if(hargaBaju > jumlahUang  ){
+                document.write("<h2>maaf saya tidak jadi beli</h2>");
+            }else if (hargaBaju === jumlahUang){
+                document.write("<h2>Maaf apakah bisa dikurangi?</h2>");
+            }else if (hargaBaju < jumlahUang){
+                document.write("<h2>baik saya akan beli baju ini</h2>");
+            };
+        }else{
+            document.write("<h2>Maaf saya hanya melihat saja</h2>");
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan switch case</title>
+</head>
+<body>
+    <script>
+        // pilihan kopi, nasi goreng dan mie goreng
+        var pilih = prompt('anda ingin sarapan apa? pilihan : kopi, nasi goreng dan mie goreng');
+        switch (pilih) {
+            case 'kopi':
+                document.write('<h2>saya hanya ingin minum kopi</h2>')
+            break;
+            case 'nasi goreng':
+                document.write('<h2>saya ingin sarapan nasi goreng</h2>')
+            break;
+            case 'mie goreng':
+                document.write('<h2>saya ingin sarapan mie goreng</h2>')
+            break;
+            default:
+                document.write('<h2>maaf pesanan yang anda inginkan tidak ada</h2>')
+            break;
+        }
+    </script>
+</body>
+</html>
